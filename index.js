@@ -26,7 +26,7 @@ app.addRouter(router);
 
 app.use(jsonParser);
 app.use(bodyParser);
-app.use(parseUrl);
+app.use(parseUrl(`http://localhost:${PORT}`));
 
 const start = async () => {
     try {
